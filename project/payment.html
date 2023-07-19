@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+<div class="container">
+
+    <form action="tksyou.html">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="image/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="mr. john deo" required>
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="text" placeholder="1111-2222-3333-4444" maxlength="19" oninput="this.value = this.value.replace(/[^0-9^-]/g, '');" required>
+                </div>
+                <div class="flex">
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="mm" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
+                </div>
+
+                
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="text" placeholder="yyyy" maxlength="4" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                            <input type="text" placeholder="123" maxlength="3" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
+                        </div>
+                        
+                        
+                    </div>
+                
+                </div>
+
+            </div>
+            <input type="submit" value="proceed to checkout" class="submit-btn">
+    </form>
+    
+</div>
+<footer>
+    <div class="footer-content">
+        <h3>About Us</h3>
+        <p>We are a group of students who created this website as part of our project. Our goal is to share our passion for gardening and provide useful information and products to help others discover the joys of gardening. We hope you find our website helpful and informative, and we welcome your feedback and suggestions.</p>
+        <p>Contact Us: EearthyGarden@gmail.com</p>
+        <ul class="socials">
+            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2023 Earthy Garden. All rights reserved.</p>
+    </div>
+   </footer>
+</body>
+</html>

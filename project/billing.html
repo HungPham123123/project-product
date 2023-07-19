@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="billing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+<div class="container">
+
+    <form action="payment.html" method="get">
+        <div class="row">
+            <div class="col">
+                <h3 class="title">billing address</h3>
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="Leo Messi" required>
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="8 Ton That Thuyet" required>
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="Hanoi" required>
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Country :</span>
+                        <select required id="selectState" style="border: 1px solid #ccc;">
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="India">India</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="China">China</option>
+                            <option value="">Korea</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="number" placeholder="123 456">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="proceed to Payment" class="submit-btn">
+    </form>
+    
+
+</div>    
+
+<footer>
+    <div class="footer-content">
+        <h3>About Us</h3>
+        <p>We are a group of students who created this website as part of our project. Our goal is to share our passion for gardening and provide useful information and products to help others discover the joys of gardening. We hope you find our website helpful and informative, and we welcome your feedback and suggestions.</p>
+        <p>Contact Us: EearthyGarden@gmail.com</p>
+        <ul class="socials">
+            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2023 Earthy Garden. All rights reserved.</p>
+    </div>
+   </footer>
+    
+</body>
+</html>
