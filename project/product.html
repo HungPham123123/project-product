@@ -4,64 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="product.js"></script>
     <title>Document</title>
 </head>
 <body>
-   <div class="menu-bar">
-      <div id="menu">
-          <ul>
-              <li>
-                  <a href="index.html">
-                      <img src="image/Earthy Garden logo.png" alt="logo" id="web-logo">
-                  </a>
-              </li>
-              <li><a href="#">INFOMATION</a>
-                  <div class="sub-menu">
-                      <ul>
-                          <li><a href="#">Technique</a></li>
-                          <li><a href="#">Tips</a></li>
-                          <li><a href="#">Tools</a></li>
-                          <li><a href="#">Soil</a></li>
-                          <li><a href="#">Pesticides</a></li>
-                          <li><a href="#">Seeds</a></li>
-                          <li><a href="#">Pots</a></li>
-                          <li><a href="#">Miniature Toys</a></li>
-                          <li><a href="#">Accessories</a></li>
-                          <li><a href="#">Pebbles</a></li>
-                      </ul>
-                  </div>
-              </li> 
-              <li><a href="#"> PRODUCT </a>
-                  <div class="sub-menu">
-                      <ul>
-                          <li><a href="#">.....</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li><a href="#us">ABOUT US</a>
-              </li>
-              <li>
-                  <div>
-                      <div class="box">
-                        <input type="text" placeholder="Search here">
-                        <a><i class="fas fa-search-location"></i></a>
-                      </div>
+   
+    <div class="menu-bar">
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="image/Earthy Garden logo.png" alt="logo" id="web-logo">
+                    </a>
+                </li>
+                <li><a href="#">INFOMATION</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#">Technique</a></li>
+                            <li><a href="#">Tips</a></li>
+                            <li><a href="#">Tools</a></li>
+                            <li><a href="#">Soil</a></li>
+                            <li><a href="#">Pesticides</a></li>
+                            <li><a href="#">Seeds</a></li>
+                            <li><a href="#">Pots</a></li>
+                            <li><a href="#">Miniature Toys</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Pebbles</a></li>
+                        </ul>            
                     </div>
-              </li>
-              <li>
-                  <button id="shopping-cart"><a href="billing.html"><i class="fas fa-shopping-cart icon"></i></a></button>
-              </li>
-              <li>
-                  <button id="user"><a href="login.html"><i class="fa-solid fa-user icon"></i></a></button>
-              </li>
-          </ul>
+                </li> 
+                <li><a href="product.html"> PRODUCT </a></li>
+                    
+                <li>
+                <a href="#">ABOUT US</a></li> 
+                 
+                <li>
+                
+                <button id="open_cart_btn">
+            <img src="image/cart-shopping-solid.svg" alt="" style="width: 30px;">
+        </button>
+
+        <div class="backdrop"></div>
+
+
+   <div id="sidecart" class="sidecart">
+
+
+      <div class="cart_content">
+
+
+         <div class="cart_header">
+            <img src="image/cart-shopping-solid.svg" alt="" style="width: 30px;">
+            <div class="header-title">
+               <h2>Your Cart</h2>
+               <span id="items_num">1</span>
+            </div>
+            <span id="close_btn" class="close_btn">&times;</span>
+         </div>
+
+         <div class="cart_items">
+
+         <div class="cart_item">
+            <div class="remove_item">
+            <span>&times;</span>
+         </div>
+         <div class="item_ing">
+            <img src="image/Organic seed premium.webp" alt="" style="width: 70%; height: 100%;">
+         </div>
+         <div class="item_details">
+            <p>Espoma Organic Seed</p>
+            <strong>19.99</strong>
+            <div class="qty">
+                <span>-</span>
+                <strong>1</strong>
+                <span>+</span>
+            </div>
+            </div>
+         </div>
+        </div>
+         
+
+         <div class="cart_actions">
+         <div class="subtotal">
+            <p>SUBTOTAL:</p>
+            <p>$<span id="subtotal_price">19.99</span></p>
+         </div>
+         
+         <button><a href="CartPage.html">Go to Cart</a></button>
+         
       </div>
-  </div>
+      </div>
+      </div>
+   </div>
+          
+
+
+
+
+        
+    </div>
     
+            </ul>
+        </div>
 
 
+    </div>
 
 
     <div id="section2">
@@ -77,7 +126,7 @@
                   <h3>Garden Shovel</h3>
                   <p class="price">$19.99</p>
                   <p>100% Organic & USA Made for Herbs, Veggies, Flowers, w/ Nutrient Rich Plant Food, Worm-Castings, & Moisture Controlling Yucca Brown</p>
-                  <p><a href="cart.html"><button>Go To Product</button></a></p>  
+                  <p><a href="productdetail.html"><button>Go To Product</button></a></p>  
                 </div>
 
                
@@ -87,7 +136,7 @@
                   <h3>Garden Water Bucket</h3>
                   <p class="price">$19.99</p>
                   <p>100% Organic & USA Made for Herbs, Veggies, Flowers, w/ Nutrient Rich Plant Food, Worm-Castings, & Moisture Controlling Yucca Brown</p>
-                  <p><a href="cart.html"><button>Go To Product</button></a></p>  
+                  <p><a href="productdetail.html"><button>Go To Product</button></a></p>  
                </div>
          
                <div class="product" data-name="p-3">
@@ -95,7 +144,7 @@
                   <h3>Garden Shears</h3>
                   <p class="price">$19.99</p>
                   <p>100% Organic & USA Made for Herbs, Veggies, Flowers, w/ Nutrient Rich Plant Food, Worm-Castings, & Moisture Controlling Yucca Brown</p>
-                  <p><a href="cart.html"><button>Go To Product</button></a></p>  
+                  <p><a href="productdetail.html"><button>Go To Product</button></a></p>  
                  </div>
          
                <div class="product" data-name="p-4">
@@ -112,7 +161,7 @@
                 <h3>Garden Shovel</h3>
                 <p class="price">$19.99</p>
                 <p>100% Organic & USA Made for Herbs, Veggies, Flowers, w/ Nutrient Rich Plant Food, Worm-Castings, & Moisture Controlling Yucca Brown</p>
-                <p><a href="cart.html"><button>Go To Product</button></a></p>  
+                <p><a href="productdetail.html"><button>Go To Product</button></a></p>  
               </div>
 
              
@@ -122,7 +171,7 @@
                 <h3>Garden Water Bucket</h3>
                 <p class="price">$19.99</p>
                 <p>100% Organic & USA Made for Herbs, Veggies, Flowers, w/ Nutrient Rich Plant Food, Worm-Castings, & Moisture Controlling Yucca Brown</p>
-                <p><a href="cart.html"><button>Go To Product</button></a></p>  
+                <p><a href="productdetail.html"><button>Go To Product</button></a></p>  
              </div>
        
              <div class="product" data-name="p-3">
@@ -130,7 +179,7 @@
                 <h3>Garden Shears</h3>
                 <p class="price">$19.99</p>
                 <p>100% Organic & USA Made for Herbs, Veggies, Flowers, w/ Nutrient Rich Plant Food, Worm-Castings, & Moisture Controlling Yucca Brown</p>
-                <p><a href="cart.html"><button>Go To Product</button></a></p>  
+                <p><a href="productdetail.html"><button>Go To Product</button></a></p>  
                </div>
        
              <div class="product" data-name="p-4">
@@ -139,7 +188,7 @@
                 <h3 class="ProductName">Espoma Organic Seed Starter Premium Potting Soil Mix</h3>
                 <p class="price">$19.99</p>
                 <p>100% Organic & USA Made for Herbs, Veggies, Flowers, w/ Nutrient Rich Plant Food, Worm-Castings, & Moisture Controlling Yucca Brown</p>
-                <p><a href="cart.html"><button>Go To Product</button></a></p>  
+                <p><a href="productdetail.html"><button>Go To Product</button></a></p>  
              </div>
 
              <div class="product" data-name="p-1">
@@ -147,7 +196,7 @@
                 <h3>Garden Shovel</h3>
                 <p class="price">$19.99</p>
                 <p>100% Organic & USA Made for Herbs, Veggies, Flowers, w/ Nutrient Rich Plant Food, Worm-Castings, & Moisture Controlling Yucca Brown</p>
-                <p><a href="cart.html"><button>Go To Product</button></a></p>  
+                <p><a href="productdetail.html"><button>Go To Product</button></a></p>  
               </div>
 
              
@@ -157,7 +206,7 @@
                 <h3>Garden Water Bucket</h3>
                 <p class="price">$19.99</p>
                 <p>100% Organic & USA Made for Herbs, Veggies, Flowers, w/ Nutrient Rich Plant Food, Worm-Castings, & Moisture Controlling Yucca Brown</p>
-                <p><a href="cart.html"><button>Go To Product</button></a></p>  
+                <p><a href="productdetail.html"><button>Go To Product</button></a></p>  
              </div>
        
              <div class="product" data-name="p-3">
@@ -165,7 +214,7 @@
                 <h3>Garden Shears</h3>
                 <p class="price">$19.99</p>
                 <p>100% Organic & USA Made for Herbs, Veggies, Flowers, w/ Nutrient Rich Plant Food, Worm-Castings, & Moisture Controlling Yucca Brown</p>
-                <p><a href="cart.html"><button>Go To Product</button></a></p>  
+                <p><a href="productdetail.html"><button>Go To Product</button></a></p>  
                </div>
        
              <div class="product" data-name="p-4">
@@ -174,7 +223,7 @@
                 <h3 class="ProductName">Espoma Organic Seed Starter Premium Potting Soil Mix</h3>
                 <p class="price">$19.99</p>
                 <p>100% Organic & USA Made for Herbs, Veggies, Flowers, w/ Nutrient Rich Plant Food, Worm-Castings, & Moisture Controlling Yucca Brown</p>
-                <p><a href="cart.html"><button>Go To Product</button></a></p>  
+                <p><a href="productdetail.html"><button>Go To Product</button></a></p>  
              </div>
 
                
