@@ -5,9 +5,9 @@ body {
     right: 0;
     bottom: 0;
     background-color: whitesmoke;
+    background-image: url(/project/image/thanks.jpg);
+    background-size: cover;
 }
-
-
 
   .tksyou {
     border: 2px solid #ccc;
@@ -15,19 +15,24 @@ body {
     text-align: center;
     max-width: 400px;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgb(224, 211, 211);
     margin-top: 15%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition opacity: 1s ease;
+    box-shadow: 0 10px 10px rgba(225, 34, 34, 0.2);
+    transition : 1s ease;
   }
   button {
-    width: 100%;
+  width: 100%;
   padding:12px;
   font-size: 17px;
-  background: #27ae60;
+  background: #6bda99;
   color:#fff;
   margin-top: 5px;
   cursor: pointer;
+  }
+
+  button a {
+    text-decoration: none;
+    color: #111;
   }
 
 

@@ -42,9 +42,6 @@ body {
     width: 50px;
     overflow: hidden;
     left: 50%;
-
-    
-    
 }
 
 .small-img img {
@@ -53,66 +50,57 @@ body {
     transition: all 0.3s ease;
    position: relative;
    top: 67%;
-   
 }
 
 .small-img:hover img {
     transform: scale(1.2);
 }
 
+.right {
+    margin: 50px auto 20px 200px;
+}
+
 .url {
     font-size: 16px;
     font-weight: 400;
     color: rgb(255, 102, 0);
-    position: relative;
-    top: 7%;
-    left: 15%;
+    margin-bottom: 25px;
 }
 
 .pName {
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 600;
-    position: relative;
-    top: 15%;
-    left: 15%;
 }
 
 .revbuy {
     font-weight: 500;
-    margin-left: 9%;
-    margin-top: 16%;
+    margin: 15px auto 15px 10px;
 }
 
 .revbuy span {
-    padding: 30px;
     text-decoration: underline;
+    margin-right: 12px;
 }
 
 .price {
     font-size: 20px;
     font-weight: 500;
-    position: relative;
-    top: 10%;
-    left: 15%;
+    margin: 15px 10px 15px 12px;
     text-decoration: underline;
 }
 
 .About {
-    position: relative;
-    left: 16%;
-    top: 14%;
-    
+    margin: 15px 10px 15px 12px;
+    font-size: 20px;
 }
 .btn-box {
     display: flex;
-    margin: 20px 0;
-    position: relative;
-    top: 25%;
-    left: 15%;
+    margin: 20px 0 20px 12px;
+
 }
 
 .btn-box button {
-    font-size: 18px;
+    font-size: 20px;
     padding: 8px 25px;
     border: none;
     outline: none;
